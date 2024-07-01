@@ -7,7 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StartView: View {
+    
+    var model = Model()
+    
+    init() {
+        model.getVideos()
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,11 +23,11 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
-        
-        var i = 0
     }
+    
 }
 
 #Preview {
-    ContentView()
+    StartView()
 }
+
