@@ -23,8 +23,6 @@ struct StartView: View {
             Text("Hello, world!")
         }
         .padding()
-        
-        var i = 0
     }
     
 }
