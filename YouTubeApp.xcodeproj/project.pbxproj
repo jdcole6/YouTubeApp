@@ -42,7 +42,7 @@
 		DAF4A1682C65B9DF00F74200 /* VideoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRowView.swift; sourceTree = "<group>"; };
 		DAF4A16A2C65B9EF00F74200 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 		DAF4A16C2C65BA2400F74200 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
-		DAF4A16E2C6706C500F74200 /* Key.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Key.xcconfig; sourceTree = "<group>"; };
+		DAF4A16F2C67088F00F74200 /* Cons.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Cons.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 				DAE9A7482C31F4BC0094D29B /* Model.swift */,
 				DAE9A76B2C3245130094D29B /* Response.swift */,
 				DAE9A76F2C33962C0094D29B /* VideoData.swift */,
-				DAF4A16E2C6706C500F74200 /* Key.xcconfig */,
+				DAF4A16F2C67088F00F74200 /* Cons.xcconfig */,
 			);
 			path = YouTubeApp;
 			sourceTree = "<group>";
