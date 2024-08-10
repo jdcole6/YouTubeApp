@@ -3,6 +3,7 @@
 
 Constants.swift
 Config.xcconfig
+Key.xcconfig
 
 ## User settings
 xcuserdata/
