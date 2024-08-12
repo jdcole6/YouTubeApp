@@ -7,14 +7,40 @@
 
 import Foundation
 
-struct Video : Decodable {
+struct Video: Decodable, Identifiable {
     
-    var videoId = ""
-    var title = ""
-    var description = ""
-    var thumbnail = ""
-    var published = Date()
- 
+    var id: String
+    var snippet: Snippet?
+    
+}
+
+struct Snippet: Decodable {
+    
+    var title: String
+    var description: String
+    var thumbnails: Thumbnails?
+    var resourceId: ResourceId?
+}
+
+struct ResourceId: Decodable {
+    
+    var videoId: String
+}
+
+struct Thumbnails: Decodable {
+    
+    var medium: ThumbnailSize?
+    
+}
+
+struct ThumbnailSize: Decodable {
+    
+    var url: String
+    var width: Int
+    var height: Int
+}
+
+/*
     enum CodingKeys: String, CodingKey {
         
         case snippet
@@ -58,4 +84,5 @@ struct Video : Decodable {
         self.videoId = try resourceIdContainer.decode(String.self, forKey: .videoId)
         
     }
-}
+ 
+ */

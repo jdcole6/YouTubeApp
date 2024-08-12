@@ -22,6 +22,7 @@
 		DAF4A1692C65B9DF00F74200 /* VideoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4A1682C65B9DF00F74200 /* VideoRowView.swift */; };
 		DAF4A16B2C65B9EF00F74200 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4A16A2C65B9EF00F74200 /* VideoDetailView.swift */; };
 		DAF4A16D2C65BA2400F74200 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4A16C2C65BA2400F74200 /* Playlist.swift */; };
+		DAF4A1732C69A35100F74200 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = DAF4A1722C69A35100F74200 /* YouTubePlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		DAF4A16A2C65B9EF00F74200 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 		DAF4A16C2C65BA2400F74200 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		DAF4A16F2C67088F00F74200 /* Cons.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Cons.xcconfig; sourceTree = "<group>"; };
+		DAF4A1702C670A5800F74200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF4A1732C69A35100F74200 /* YouTubePlayerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 		DAE9A7332C2F6B390094D29B /* YouTubeApp */ = {
 			isa = PBXGroup;
 			children = (
+				DAF4A1702C670A5800F74200 /* Info.plist */,
 				DAE9A7692C323DE90094D29B /* Launch Screen.storyboard */,
 				DAE9A7342C2F6B390094D29B /* AppEntry.swift */,
 				DAF4A1632C65B8A000F74200 /* Services */,
@@ -144,6 +148,9 @@
 			dependencies = (
 			);
 			name = YouTubeApp;
+			packageProductDependencies = (
+				DAF4A1722C69A35100F74200 /* YouTubePlayerKit */,
+			);
 			productName = YouTubeApp;
 			productReference = DAE9A7312C2F6B390094D29B /* YouTubeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +179,9 @@
 				Base,
 			);
 			mainGroup = DAE9A7282C2F6B390094D29B;
+			packageReferences = (
+				DAF4A1712C69A35000F74200 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+			);
 			productRefGroup = DAE9A7322C2F6B390094D29B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -219,6 +229,7 @@
 /* Begin XCBuildConfiguration section */
 		DAE9A73E2C2F6B3B0094D29B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF4A16F2C67088F00F74200 /* Cons.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -280,6 +291,7 @@
 		};
 		DAE9A73F2C2F6B3B0094D29B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF4A16F2C67088F00F74200 /* Cons.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -344,6 +356,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YouTubeApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -383,6 +396,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YouTubeApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -431,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAF4A1712C69A35000F74200 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAF4A1722C69A35100F74200 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAF4A1712C69A35000F74200 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DAE9A7292C2F6B390094D29B /* Project object */;
 }
